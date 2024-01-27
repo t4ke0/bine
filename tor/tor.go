@@ -150,13 +150,13 @@ func Start(ctx context.Context, conf *StartConf) (*Tor, error) {
 	if tor.DataDir == "" {
 		tempBase := conf.TempDataDirBase
 		if tempBase == "" {
-			tempBase = "."
+			tempBase = "/tmp"
 		}
 		var err error
 		if tempBase, err = filepath.Abs(tempBase); err != nil {
 			return nil, err
 		}
-		if tor.DataDir, err = ioutil.TempDir(tempBase, "data-dir-"); err != nil {
+		if tor.DataDir, err = ioutil.TempDir(tempBase, ".data-dir-"); err != nil {
 			return nil, fmt.Errorf("Unable to create temp data dir: %v", err)
 		}
 		tor.Debugf("Created temp data directory at: %v", tor.DataDir)
