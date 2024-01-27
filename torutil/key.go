@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cretz/bine/torutil/ed25519"
+	"github.com/t4ke0/bine/torutil/ed25519"
 	"golang.org/x/crypto/sha3"
 )
 

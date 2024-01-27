@@ -7,8 +7,8 @@ import (
 	"net/textproto"
 	"os"
 
-	"github.com/cretz/bine/control"
-	tor047 "github.com/cretz/bine/process/embedded/tor-0.4.7"
+	"github.com/t4ke0/bine/control"
+	tor047 "github.com/t4ke0/bine/process/embedded/tor-0.4.7"
 )
 
 // Simply calls Tor will the same parameters, unless "embedconn" is the arg

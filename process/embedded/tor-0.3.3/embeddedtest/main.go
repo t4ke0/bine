@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	tor033 "github.com/cretz/bine/process/embedded/tor-0.3.3"
+	tor033 "github.com/t4ke0/bine/process/embedded/tor-0.3.3"
 )
 
 // Simply calls Tor will the same parameters
